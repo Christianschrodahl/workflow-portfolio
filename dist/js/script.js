@@ -1,0 +1,1 @@
+var breadCrumbs=document.getElementById("breadcrumbs"),getPage=location.pathname.match(/\b[a-z]+/gi),link="index"!==getPage[0]?'<li><a href="/'+getPage[0]+'">'+getPage[0]+"</a></li>":"";breadCrumbs.innerHTML='<ul><li><a href="/">Home</a></li> / '+link+"</ul>";
